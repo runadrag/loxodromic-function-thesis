@@ -14,6 +14,7 @@
 \usepackage{alltt}
 \usepackage{indentfirst}
 \usepackage{amsmath, amsthm, amssymb}
+\usepackage{url}
 
 \setstretch{1.1}
 
@@ -66,14 +67,25 @@
 
 \section{Вступ}
 
-Лорем іпсум!
+Лорем іпсум!\cite{alias}
 
 \clearpage
 
 \section{<РОЗДІЛ \#>}
 
-І так далі
+І так далі\cite{web}
 
+\clearpage
+\addcontentsline{toc}{section}{Література}
+\begin{thebibliography}{9}
 
+  \bibitem{alias}<АВТОР> \emph{<КНИГА>},
+    <ВИДАВНИЦТВО> <РІК>, <К-КІСТЬ СТОРІНОК> ст.
+    
+  \bibitem{web}<АВТОР> \emph{<НАЗВА>} [Електронний ресурс],
+    <РІК>. Режим доступу:
+    \url{https://github.com/Uko/thesis-template}
+
+\end{thebibliography}
 
 \end{document}
