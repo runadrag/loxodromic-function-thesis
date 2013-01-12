@@ -15,11 +15,9 @@
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{url}
 
-\defaultfontfeatures{Mapping=tex-text}
-
-\setmainfont{Liberation Serif}
-\setsansfont{Liberation Sans}
-\setmonofont{Liberation Mono}
+\setmainfont[Mapping=tex-text]{Times New Roman}
+\newfontfamily\cyrillicfont{Times New Roman}
+\newfontfamily\cyrillicfonttt{Courier New}
 \setmainlanguage{ukrainian}
 \setotherlanguage{english}
 
@@ -95,20 +93,25 @@
 
 \section{<РОЗДІЛ Реферативна частина\#>}
 
-І так далі\cite{web}
-
-\clearpage
-\section{<РОЗДІЛ Основне завдання\#>}
-
-\emph{Твердження1} Локсодромні функції з мультиплікатором \textit{q} утворюють поле $L_{q}$. \\
-Перевіримо аксіоми поля:\\
+\emph{Твердження1:} Локсодромні функції з мультиплікатором \textit{q} утворюють поле $L_{q}$. \\
+Доведення: перевіримо аксіоми поля:\\
 1. Нульовий елемент існує - 0.\\
 2. Додавання виконується.\\
 3. Частка. Потрібно показати наступне $f_{1}(qz)/f_{2}(qz)=F(qz)$\\
 $f_{1}(qz)$, $f_{2}(qz)$ - мероморфні, частка двох мероморфних - мероморфна.Тому, оскільки $f_{1}(qz)$, $f_{2}(qz)$ -локсодромні, то $ F(qz)$ також локсодромна.\\
 4. Композиція.$f(z)$-локсодромна, $f(cz)$-локсодромна, $c \neq 0$. Тоді  $f(cqz)=f(q*cz)=f(cz)$\\
-\emph{Твердження2} Будь-яка $g(z)=f(e^{2\pi iz/\omega_{1}})$ є періодичною з періодом $\omega_{1}$.\\
-$g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e^{  2iz\pi / \omega_{1}  +2i\pi } ) = f(  e^{  2iz\pi / \omega_{1}  } ) = g(z)$ \\
+
+\emph{Твердження2:} Будь-яка $g(z)=f(e^{2iz\pi/\omega_{1}})$ є періодичною з періодом $\omega_{1}$.\\
+Доведення: $g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e^{  2iz\pi / \omega_{1}  +2i\pi } ) = f(  e^{  2iz\pi / \omega_{1}  } ) = g(z)$ \\
+
+\emph{Твердження3:} Якщо $f$  -локсодромна з мультиплікатором $q$, то  $g(z)=f(e^{2iz\pi/\omega_{1}})$ є подвійно періодичною, a $q=e^{2i\pi \omega_{2}/ \omega_{1}}$, $q<1$, $Im(\omega_{2}/\omega_{1})>0$\\
+Доведення:
+
+І так далі\cite{web}
+
+\clearpage
+\section{<РОЗДІЛ Основне завдання\#>}
+
 
 
 І так далі\cite{web}
