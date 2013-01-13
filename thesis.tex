@@ -15,9 +15,12 @@
 \usepackage{amsmath, amsthm, amssymb}
 \usepackage{url}
 
-\setmainfont[Mapping=tex-text]{Times New Roman}
-\newfontfamily\cyrillicfont{Times New Roman}
-\newfontfamily\cyrillicfonttt{Courier New}
+\defaultfontfeatures{Mapping=tex-text}
+
+\setmainfont{Liberation Serif}
+\setsansfont{Liberation Sans}
+\setmonofont{Liberation Mono}
+
 \setmainlanguage{ukrainian}
 \setotherlanguage{english}
 
@@ -95,7 +98,7 @@
 
 \emph{Твердження1:} Локсодромні функції з мультиплікатором \textit{q} утворюють поле $L_{q}$. \\
 Доведення: перевіримо аксіоми поля:\\
-1. Нульовий елемент існує -- 0.\\
+1. Нульовий елемент існує - 0.\\
 2. Додавання виконується.\\
 3. Частка. Потрібно показати наступне $f_{1}(qz)/f_{2}(qz)=F(qz)$\\
 $f_{1}(qz)$, $f_{2}(qz)$ - мероморфні, частка двох мероморфних - мероморфна.Тому, оскільки $f_{1}(qz)$, $f_{2}(qz)$ -локсодромні, то $ F(qz)$ також локсодромна.\\
@@ -105,8 +108,10 @@ $f_{1}(qz)$, $f_{2}(qz)$ - мероморфні, частка двох меро�
 Доведення: $g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e^{  2iz\pi / \omega_{1}  +2i\pi } ) = f(  e^{  2iz\pi / \omega_{1}  } ) = g(z)$ \\
 
 \emph{Твердження3:} Якщо $f$  -локсодромна з мультиплікатором $q$, то  $g(z)=f(e^{2iz\pi/\omega_{1}})$ є подвійно періодичною, a $q=e^{2i\pi \omega_{2}/ \omega_{1}}$, $q<1$, $Im(\omega_{2}/\omega_{1})>0$\\
-Доведення:
-
+Доведення: $ \Lambda = \mathbb{Z}\omega_{1} + \mathbb{Z}\omega_{2} $ \\
+$g(z+m\omega_{1}+ n\omega_{2})= f(e^{2i\pi(z+m\omega_{1}+ n\omega_{2})/\omega_{1}})=f( e^{2iz\pi}e_{2im\pi}e^{2in\pi\omega_{2} / \omega_{1}} )=f(e^{2iz\pi/\omega_{1}}q^{n})= $, оскільки $q$-мультиплікатор, то
+ $=f(e^{2iz\pi/\omega_{1}})=g(z)$\\
+ 
 І так далі\cite{web}
 
 \clearpage
