@@ -126,6 +126,15 @@ $g(z+m\omega_{1}+ n\omega_{2})= f(e^{2i\pi(z+m\omega_{1}+ n\omega_{2})/\omega_{1
 Доведення:\\
 \\
 
+\emph{Твердження4:} Для $z \in \mathbb{Z}^{*}$ покладемо
+  \begin{center}
+	$S(z)= \prod_{0}^{+\infty } ( 1-q^{n}z ) \prod_{1}^{+\infty }( 1-q^{n}z^{-1} )$
+  \end{center} Тоді виконується $S(qz)=-z^{-1}S(z)$ (1), $S(\frac{1}{z}=-z^{-1}S(z)$ (2)\\
+Доведення:........................................\\
+$S(qz)= \prod_{0}^{+\infty } ( 1-q^{n+1}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}{qz})=
+ \prod_{0}^{+\infty } ( 1-qq^{n}z ) \prod_{1}^{+\infty }( 1-\frac{1}{q}\frac{q^{n}}{z})=$, зробимо заміни: для першого добутку $n+1=m$, для другого $n-1=m$, тоді $=\prod_{1}^{+\infty } ( 1-q^{m}z ) \prod_{0}^{+\infty }( 1-\frac{q^{m}}{z})=\frac{\prod_{0}^{+\infty } ( 1-q^{m}z )}{1-z}(1-\frac{1}{z})\prod_{1}^{+\infty }( 1-\frac{q^{m}}{z})=-z^{-1}S(z)$ \\
+ $S(\frac{1}{z})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{1}{z} ) \prod_{1}^{+\infty }( 1-q^{n}z)=$, домножимо перший добуток на $(1-q^{0}\frac{1}{z})$, а другий на $(1-z)$, тоді $=\prod_{1}^{+\infty } ( 1-q^{n}\frac{1}{z} )(1-q^{0}\frac{1}{z})\frac{ \prod_{0}^{+\infty }( 1-q^{n}z)}{1-z}$
+
 \emph{Теорема4:} Для кожного $R$ на межі $C_{q}(R)$, яка не містить ні нулів, ні полюсів локсодромної функції $f\in L_{q}$, нехай $\lambda=\frac{(a_{1}...a_{m})}{(b_{1}...b_{m})}$ , де $a_{1},...,a_{m}$- нулі $f\in L_{q}$, $b_{1},...,b_{m}$- полюси $f\in L_{q}$. Тоді $\lambda\in \left \langle q \right \rangle$. ($ \exists n:\lambda =q^{n}$)\\
 Доведення:
 \\
