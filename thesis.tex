@@ -147,7 +147,12 @@ $S(qz)= \prod_{0}^{+\infty } ( 1-q^{n+1}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}
 Якщо для $z \in \mathbb{C}^{*}$ не рівному $b_{1},...,b_{m}$ по модулю $\left \langle q \right \rangle $ ми покладемо $M(z)=\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})}$,тоді бачимо, що $M$ мероморфна функція на $\mathbb{C}^{*}$, її полюси конгруентні $b_{1},...,b_{m}\mod \left \langle q \right \rangle $. Більше того, з (1) і (2) випливає $M(qz)=M(z)$, $M(\frac{1}{z})=\frac{S(a_{1}z)...S(a_{m}z)}{S(b_{1}z)...S(b_{m}z)}$ (**), тобто зокрема ми бачимо, що $M\in L_{q}$(локсодромна).\\
 Перевіримо це:\\
 $M(qz)=\frac{S(\frac{qz}{a_{1}})...S(\frac{qz}{a_{m}})}{S(\frac{qz}{b_{1}})...S(\frac{qz}{b_{m}})}$\\
-$S(\frac{qz}{a_{j}})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{qz}{a_{j}} ) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{qz})=$
+$S(\frac{qz}{a_{j}})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{qz}{a_{j}} ) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{qz}) =?????????????????????????????????????= \frac{1}{1-\frac{z}{a_{j}}} \prod_{0}^{+\infty } ( 1-q^{n}\frac{z}{a_{j}}) (1-\frac{a_{j}}{z}) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{z})=$
+(оскільки $ \frac{\frac{z-a_{j}}{z}}{\frac{a_{j}-z}{a_{j}}}= \frac{(z-a_{j})a_{j}}{-(z-a_{j})z}=-\frac{a_{j}}{z} $, тому)
+$=-\frac{a_{j}}{z}S(\frac{z}{a_{j}})$\\
+$S(\frac{z}{a_{j}})=  \prod_{0}^{+\infty } ( 1-q^{n}\frac{z}{a_{j}} ) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{z})$.\\
+ Тодi
+$M(qz)=\frac{ (-1)^{m} \frac{a_{1}}{z} S(\frac{z}{a_{1}})...\frac{a_{m}}{z} S(\frac{z}{a_{m}}) }{ (-1)^{m} \frac{b_{1}}{z} S(\frac{z}{b_{1}})...\frac{b_{m}}{z} S(\frac{z}{b_{m}}) }=\frac{ a_{1}*...*a_{m}}{b_{1}*...*b_{m}}M(z)=$ (зважаючи на (*)) $=M(z)$\\
 
 \emph{Теорема4:} Для кожного $R$ на межі $C_{q}(R)$, яка не містить ні нулів, ні полюсів локсодромної функції $f\in L_{q}$, нехай $\lambda=\frac{(a_{1}...a_{m})}{(b_{1}...b_{m})}$ , де $a_{1},...,a_{m}$- нулі $f\in L_{q}$, $b_{1},...,b_{m}$- полюси $f\in L_{q}$. Тоді $\lambda\in \left \langle q \right \rangle$. ($ \exists n:\lambda =q^{n}$)\\
 Доведення:
