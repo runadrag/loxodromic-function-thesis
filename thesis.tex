@@ -4,7 +4,7 @@
 \usepackage{polyglossia}
 \usepackage[left=2.5cm,top=2.5cm,right=2.5cm,bottom=2.5cm,nohead]{geometry}
 \usepackage{setspace}
-\usepackage{listings}
+\usepackage{listings} 
 \usepackage{color}
 \usepackage{float}
 \usepackage{courier}
@@ -25,12 +25,12 @@
 \setotherlanguage{english}
 
 \setstretch{1.1}
-
 \begin{document}
 \pretolerance=-1
 \tolerance=2300
 
-\thispagestyle{empty}
+\pagenumbering{arabic}
+\pagestyle{empty}
 \setlength{\parindent}{1.5cm}
 \fontsize{14pt}{6mm}\selectfont
 
@@ -77,151 +77,463 @@
 \clearpage
 
 
-
 \setstretch{1.5}
 \fontsize{14pt}{6mm}\selectfont
 
-\newcommand{\vect}[1]{(#1_1,#1_2,#1_3,\dots,#1_n)}
-
-\thispagestyle{empty}
 \tableofcontents
 \clearpage
-\pagenumbering{arabic}
+\pagestyle{plain}
 
-\section{<Основні відомості\#>}
+\section{Основні відомості}
 
-Теорія мероморфних мультиплікативно періодичних функцій була розроблена О.Розенбергом. Ж.Валірон називає ці функції локсодромними, бо точки, в яких такі функції в випадку ,,,,,,,не дійсного $q$ набуває такого ж значення ??? лежить на логарифмічній спіралі. Образи цих ??останніх.точок?? на сфері Рімана перетинають меридіани під тим же кутом, і називаються локсодромними кривими ($\lambda o \xi o\zeta$-косий, $\delta \rho o \mu o\zeta$-шлях). В лог????-полярних координатах вони прямі лінії.\\
-Двічі періодичні мероморфні функції є еліптичними функціями і є більш відомими з робіт К.Якобі, Н.Абеля, К.Вейєрштрасса.\\
-Локсодромні мероморфні функції дають просту конструкцію еліптичних функцій.\\
+Теорія мероморфних мультиплікативно періодичних функцій була розроблена О.Розенбергом. Ж.Валірон називає ці функції локсодромними, бо точки, в яких такі функції в випадку не дійсного $q$ набувають однакові значення лежaть на логарифмічних спіралях. Образи цих точок на сфері Рімана перетинають меридіани під тим же кутом, і називаються локсодромними кривими ($\lambda o \xi o\zeta$-косий, $\delta \rho o \mu o\zeta$-шлях). В полярних координатах вони прямі лінії.\\
+(Двічі періодичні мероморфні функції є еліптичними функціями і є більш відомими з робіт К.Якобі, Н.Абеля, К.Вейєрштрасса.\\
+Локсодромні мероморфні функції дають просту конструкцію еліптичних функцій.)\\
+В цій роботі вивчаються властивості локсодромних функцій.
+\[\begin{array}{l}
+\end{array} \]
 
-\emph{Означення:} Мероморфна функція $f$ в проколеній площині $\mathbb{C}^{*}$ називається локсодромною з мультиплікатором $q$, якщо задовільняється умова \begin{center}
-$f(qz)=f(z), 0<\vert q \vert<1, z\in \mathbb{C}^{*}.$
-\end{center}
+\newtheorem{ozn}{Означення}
+\begin{ozn}
+ Мероморфна функція $f$ в проколеній площині $\mathbb{C}^{*}$ називається локсодромною з мультиплікатором $q$, якщо задовільняється умова 
+\begin{equation}\label{eq0}
+\begin{array}{l}
+f(qz)=f(z), 0<\vert q \vert<1, z\in \mathbb{C}^{*}
+\end{array}
+\end{equation}
+\end{ozn}
+\[\begin{array}{l}
+\end{array} \]
+
+\newtheorem{pryk}{Приклад}
+\begin{pryk}
+\textit{\textbf{Функція $\mathbf{\rho}$.}}
+\begin{ozn}
+
+\end{ozn}
+
+\end{pryk}
 
 \clearpage
 
-\section{<Властивості локсодромних функцій\#>}
 
-\emph{Твердження1:} Локсодромні функції з мультиплікатором \textit{q} утворюють поле $L_{q}$. \\
+\section{Властивості локсодромних функцій}
+
+\newtheorem{twerd}{Твердження}
+\begin{twerd}
+ Локсодромні функції з мультиплікатором \textit{q} утворюють поле $L_{q}$.
+ \end{twerd} 
 Поле — це комутативне кільце з одиницею, в якому кожний ненульовий елемент $a\neq 0$ має обернений $a^{-1}$ в цьому ж кільці.\\
 Введемо операції додавання і множення.Вони вводяться поточково:\\
 $f+g=h, \forall z \in \mathbb{C}^{*} h(z)=f(z)+g(z)\\
 f*g=h, \forall z \in \mathbb{C}^{*} h(z)=f(z)*g(z)$\\
-Нульвим елементом є $f(z)=0 в \mathbb{C}$.\\
-Одиничним елементом є $f(z)=1 в \mathbb{C}$.\\
+Нульвим елементом є $f(z)=0$ в $\mathbb{C}$.\\
+Одиничним елементом є $f(z)=1$ в $\mathbb{C}$.\\
 Тоді всі аксіоми поля будуть виконуватися:\\
 1. Існування нульового елемента: $g(z)=0, f(qz)$-мероморфна, $f(qz)+g(z)=f(qz)$.\\
 2. Додавання мероморфних функцій:$f_{1}(qz),f_{2}(qz)$-мероморфні і локсодромні, сума мероморфних- мероморфна, тому $f_{1}(qz)+f_{2}(qz)$-локсодромна \\
 3. Частка. Потрібно показати наступне $f_{1}(qz)/f_{2}(qz)=F(qz)$\\
 $f_{1}(qz)$, $f_{2}(qz)$ - мероморфні, частка двох мероморфних - мероморфна.Тому, оскільки $f_{1}(qz)$, $f_{2}(qz)$ -локсодромні, то $ F(qz)$ також локсодромна.\\
-4. Композиція.$f(z)$-локсодромна, $f(cz)$-локсодромна, $c \neq 0$. Тоді  $f(cqz)=f(q*cz)=f(cz)$\\
+\emph{Зауважимо:} $f(z)$-локсодромна, $c \neq 0$. Тоді  $f(cqz)=f(q*cz)=f(cz)$
+\[\begin{array}{l}
+\end{array} \]
 
-\emph{Зауваження:} Будь-яка $g(z)=f(e^{2iz\pi/\omega_{1}})$ є періодичною з періодом $\omega_{1}$.\\
-Перевіримо це зауваження: $g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e^{  2iz\pi / \omega_{1}  +2i\pi } ) = f(  e^{  2iz\pi / \omega_{1}  } ) = g(z)$ \\
+\newtheorem{zauv}{Зауваження}
+\begin{zauv} 
+Будь-яка функція 
+\begin{equation}\label{eq1}
+\begin{array}{l}
+g(z)=f(e^{2iz\pi/\omega_{1}})
+\end{array}
+\end{equation}
+є періодичною з періодом $\omega_{1}$.
+\end{zauv}
+Переконаємось, що це зауваження вірне: 
+\[\begin{array}{l}
+g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e^{  2iz\pi / \omega_{1}  +2i\pi } ) = f(  e^{  2iz\pi / \omega_{1}  } ) = g(z) 
+\end{array}\]
+\[\begin{array}{l}
+\end{array} \]
 
-\emph{Твердження2:} Якщо $f$  -локсодромна з мультиплікатором $q$, то  $g(z)=f(e^{2iz\pi/\omega_{1}})$ є подвійно періодичною, a $q=e^{2i\pi \omega_{2}/ \omega_{1}}$, $q<1$, $Im(\omega_{2}/\omega_{1})>0$\\
-Доведення: $ \Lambda = \mathbb{Z}\omega_{1} + \mathbb{Z}\omega_{2} $ \\
-$g(z+m\omega_{1}+ n\omega_{2})= f(e^{2i\pi(z+m\omega_{1}+ n\omega_{2})/\omega_{1}})=f( e^{2iz\pi}e^{2im\pi}e^{2in\pi\omega_{2} / \omega_{1}} )=f(e^{2iz\pi/\omega_{1}}q^{n})= $, оскільки $q$-мультиплікатор, то
- $=f(e^{2iz\pi/\omega_{1}})=g(z)$\\
- 
-\emph{Теорема1:}Якщо f локсодромна і голоморфна в $\mathbb{C}^{*}$, то $f=const$.)\\
-Доведення:\\
-\\
-\\
+\begin{twerd}
+ Якщо $f$  -локсодромна з мультиплікатором $q$, то  
+\[\begin{array}{l}
+g(z)=f(e^{2iz\pi/\omega_{1}})
+\end{array}\] 
+є подвійно періодичною, a $q=e^{2i\pi \omega_{2}/ \omega_{1}}$, $q<1$, $Im(\omega_{2}/\omega_{1})>0$
+\end{twerd}
+\begin{proof}
+\[\begin{array}{l}
+\Lambda = \mathbb{Z}\omega_{1} + \mathbb{Z}\omega_{2} 
+\end{array}\]
 
-Рівність $f(q\xi)=f(\xi)$ для будь-якого $\xi \in \mathbb{C}^{*}$ показує, що $f$ визначається цим обмеженням на кільце????????????????????????????????????????????????????/ Оскільки???????????????????????-компакт, то $f$ компактна на ????????????????????, тобто і в $\mathbb{C}^{*}$. ????Теорема з комплексного аналізу стверджує, що $f$ голоморфна в нулі ???(origin)????, оскільки $f$ є голоморфна і обмежена в околі ?????(neighbourhood)??? нуля????(origin)????.Тому ми можемо застосувати теорему Ліувілля \\
+\[\begin{array}{l}
+g(z+m\omega_{1}+ n\omega_{2})= f(e^{2i\pi(z+m\omega_{1}+ n\omega_{2})/\omega_{1}})=\\
+=f( e^{2iz\pi}e^{2im\pi}e^{2in\pi\omega_{2} / \omega_{1}})=
+f(e^{2iz\pi/\omega_{1}}q^{n})=
+\end{array}\]
+ оскільки $q$-мультиплікатор, то
+ \[\begin{array}{l}
+ =f(e^{2iz\pi/\omega_{1}})=g(z)
+ \end{array}\]
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
 
+\newtheorem{thm}{Теорема}
+\begin{thm}
+Якщо f локсодромна і голоморфна в $\mathbb{C}^{*}$, то $f=const$.
+\end{thm}
 
-\emph{Теорема2:} Нехай $f\in L_{q}$ і не має ні нулів, ні полюсів на межі кільця $C_{q}(R)={z\in \mathbb{C}:\left |q  \right |R\leq \left |z  \right |<R }$. Тоді сума лишків $f(z)/z$ (лежить в $C_{q}(R)$) дорівнює $0$.\\
-Доведення:\\Згідно з теоремою Коші про лишки\\
-\begin{center}
-$ \sum_{b_{j}\in C_{q}(R)}^{ } resf(z)= \frac{1}{2i\pi}\int_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz$
-\end{center}
-Нехай $\Gamma$, $\Gamma^{'}$ позначають кола, які обмежують $C_{q}(R)$. ...ГРАФІК............................
-\\
+\includegraphics[scale=0.9]{th1.png}
+\begin{proof}
+Оскільки $f$ локсодромна, тому вона визначається своїми значеннями в $\overline{C_{q}(1)}$ тому, що 
+\begin{equation}\label{Cond1}
+\begin{array}{l}
+ \forall z $ $\exists n: q^{n}z \in \overline{C_{q}(1)} $ ($f(zq^{n})=f(z)$)$ 
+\end{array}
+\end{equation} 
+( умова $\eqref{Cond1}$ рівносильна такій: $f(zq^{n})=f(z)$)\\
+тобто
+\begin{equation}\label{Cond2}
+\begin{array}{l}
+\vert q \vert \leq \vert q\vert ^{n} \vert z\vert \leq 1                       
+\end{array}
+\end{equation}
+Щоб довести, що $\eqref{Cond1}$ справді виконується, нам достатньо знайти $n$. З $\eqref{Cond2}$ отримаємо:
+\[\begin{array}{l}
+log\vert q \vert \leq n log\vert q\vert +log \vert z\vert \leq 0                       
+\end{array}\]
 
-Тоді \\
-$\sum_{b_{j}\in C_{q}(R)}^{ } resf(z)=
-\\=\frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f(\xi)}{\xi}d\xi  +\int_{\Gamma_{_}}^{ }\frac{f(x)}{x}dx)=   \\
-\frac{1}{2\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f(\xi)}{\xi} d\xi -\int_{\Gamma_{+}}^{ }\frac{f(x)}{x}})dx)=
-\\
-=\frac{1}{2i\pi}(\int_{0}^{2\pi } \f(Re^{i\theta})frac{iRe^{i\theta}}{Re^{i\theta }}d\theta  +\int_{0}^{2\pi }\f(\left |q \right |Re^{i\theta })frac{i\left |q \right |Re^{i\theta }}{\left |q \right |Re^{i\theta }}d/theta)=   \\
-\frac{1}{2\pi}(\int_{0}^{2\pi} \f(Re^{i\theta})d\theta  -\int_{0}^{2\pi}\f(\left |q \right |Re^{i\theta })d/theta)=
-\\
-\theta =\varphi +\alpha ;
-q=\left |q  \right |e^{i\alpha }
+\[\begin{array}{l}
+\frac {log\vert q \vert }{log\vert q\vert} \geq n  + \frac{ log \vert z\vert}{log\vert q\vert} \geq 0                       
+\end{array}\]
 
-\\
-= \frac{1}{2\pi}(\int_{0}^{2\pi} \f(Re^{i\theta})d\theta  -\int_{-\alpha}^{2\pi-\alpha}\f(qRe^{i\varphi })d/varphi)=\frac{1}{2\pi}(\int_{0}^{2\pi} \f(Re^{i\theta})d\theta  -\int_{0}^{2\pi}\f(Re^{i\varphi????\theta })d/varphi???\theta)=0$.\\
-\\
-\emph{Наслідок:} Кожна не стала локсодромна функція з мультиплікатором $q$ має що найменше 2 полюси( і 2 нулі ) в кожному кільці $C_{q}(R)$.\\
+\[\begin{array}{l}
+1- \frac{ log \vert z\vert}{log\vert q\vert} \geq n  \geq -\frac{ log \vert z\vert}{log\vert q\vert} 
+\end{array}\]
+Оскільки $\overline{C_{q}(1)}$-компакт, то $f$ компактна на $\overline{C_{q}(1)}$. Зважаючи на теорему: голоморфна на компакті функція обмежена за модулем( бо неперервна за теоремою Вейєрштрасса), отримуємо
+\[\begin{array}{l}
+  \vert f(z) \vert\leq M
+\end{array}\]
+Тобто $f$ компактна в $\mathbb{C}^{*}$. \\
+А оскільки $f$ компактна в проколеній площині $\mathbb{C}^{*}$, то вона обмежена в околі нуля. Отже, $0$- усувна точка і $f$ по неперервності продовжується
+\[\begin{array}{l}
+  f(0)=\lim_{z\rightarrow 0} f(z)
+\end{array}\]
+Тому 
+\[\begin{array}{l}
+  \vert f(z) \vert\leq M \Longrightarrow \vert f(0) \vert\leq M
+\end{array}\]
+Отож, $f$ ціла і обмежена в $\mathbb{C}$. Згідно з теоремою Ліувілля, ціла функція, модуль якої обмежений, є сталою.
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
+
+(Оскільки функція голоморфна, тому вона розвивається в ряд Тейлора і тому: $\exists\lim_{z \to 0}f(z)=A\leq C$, де $C$ деяка константа. Довизначивши функцію $f$: $f(0)=A$, ми отримаємо, що $f$ ціла, оскільки вона аналітична у всій площині. $f$ обмежена в $\overline{C_{q}(1)}$ і в околі нуля $U(0)$. Оскільки значення функції $f$ в кільці ${z\in \mathbb{C}: \vert q \vert<\vert z \vert \leq 1}$ повторюються, за рахунок різних $n$ в $q^{n}$, на $C_{q}(R)={z\in \mathbb{C}: \vert q \vert R < \vert z \vert \leq R}$   і $\vert f \vert \leq C$ в $\mathbb{C}^{*}$. Оскільки $\overline{C_{q}(R)}$- компакт, то $f$- компактна на $\overline{C_{q}(R)}$, тобто і в $\mathbb{C}^{*}$.Теорема з комплексного аналізу стверджує, що $f$ голоморфна в нулі, якщо $f$ є голоморфна і обмежена в околі нуля.Тому ми можемо застосувати теорему Ліувілля \\
+(теорема Ліувілля: якщо ціла ф-ція  $f$ обмежена в околі точки $ z=\infty $, то $f(z)=const$.))\\
+
+(Рівність $f(q\xi)=f(\xi)$ для будь-якого $\xi \in \mathbb{C}^{*}$ показує, що $f$ визначається цим обмеженням на кільце $\overline{C_{q}(R)}={z in \mathbb{C}; \vert q \vert R\leq\vert z \omega\leq R }$ Оскільки $\overline{C_{q}(R)}$-компакт, то $f$ компактна на $\overline{C_{q}(R)}$, тобто і в $\mathbb{C}^{*}$. Теорема з комплексного аналізу стверджує, що $f$ голоморфна в нулі, оскільки $f$ є голоморфна і обмежена в околі нуля.Тому ми можемо застосувати теорему Ліувілля )
+\[\begin{array}{l}
+\end{array} \]
   
-\emph{Теорема3:} Нехай $f\in L_{q}$ і $C_{q}(R)$- кільце, таке як в теоремі 2. Нехай $m_{a}$($n_{b}$) позначає кількість нулів (полюсів) $f$ в $C_{q}(R)$. Тоді $\sum m_{a}=\sum n_{b}$ \\
-Доведення:
-1 спосіб.\\
-$\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz)=$ (зробивши заміну $z=q\xi$  та перейшовши від $\Gamma$ до $\Gamma^{'}$, отримаємо) $= \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi - \int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(q\xi )}{f(q\xi) }d(q\xi)) = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi - \int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{qf(\xi) }qd\xi)=0 $, оскільки $ f(q\xi)=f(\xi)$, $qf^{'}(q\xi)=f^{'}(\xi)$.\\
-2 спосіб.\\
-$\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz) = \frac{1}{2i\pi}(\int_{0}^{2\pi} \frac{f^{'}(qRe^{i\phi???})}{f(qRe^{i\phi???}) }iqRe^{i\phi???}d\phi - \int_{0}^{2\pi} \frac{f^{'}(Re^{i\phi???})}{f(Re^{i\phi???}) }iRe^{i\phi???}d\phi) = \frac{1}{2i\pi}(\int_{0}^{2\pi} \frac{f^{'}(Re^{i\phi???})}{f(Re^{i\phi???}) }\frac{1}{q} iqRe^{i\phi???}d\phi - \int_{0}^{2\pi} \frac{f^{'}(Re^{i\phi???})}{f(Re^{i\phi???}) }iRe^{i\phi???}d\phi)=0 $\\
+\begin{thm}
+ Нехай $f\in L_{q}$ і не має ні нулів, ні полюсів на межі кільця 
+\begin{equation}\label{th21}
+\begin{array}{l}
+C_{q}(R)=\lbrace z\in \mathbb{C}:\left |q  \right |R\leq \left |z  \right |<R \rbrace
+\end{array}
+\end{equation} 
+ Тоді сума лишків $\frac{f(z)}{z}$ (лежить в $C_{q}(R)$) дорівнює $0$.
+\end{thm}
+\begin{proof}
+ Межа кільця $C_{q}(R)$ має вигляд $\lbrace z\in \mathbb{C}:\left |q  \right |R< \left |z  \right |<R \rbrace$, адже межею є відкрита множина, але задля спрощення записів, розглядатимемо суму лишків на $C_{q}(R)$, маючи на увазі його межу. Згідно з теоремою Коші про лишки
+ \[\begin{array}{l}
+\sum_{b_{j}\in C_{q}(R)}^{ } resf(z)= \frac{1}{2i\pi}\int_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz
+\end{array} \]
+Нехай $\Gamma$, $\Gamma^{'}$ позначають кола, які обмежують $C_{q}(R)$.\\
+\includegraphics[scale=0.5]{1..PNG}\\
+Тоді 
+\[\begin{array}{l}
+\sum_{b_{j} \in C_{q}(R)}^{ } resf(z) = 
+\end{array} \]
+оскільки правильним напрямком обходу області інтегрування називається такий
+напрямок, коли область інтегрування залишається ліворуч 
+\[\begin{array}{l}
+= \frac{1}{2i\pi} (\int_{\Gamma^{'}_{+}}^{ }\frac{f(\xi)}{\xi}d\xi  + \int_{\Gamma_{-}}^{ }\frac{f(x)}{x}dx)=
+\end{array} \]
+оскільки інтеграл по правильному напрямку обходу області інтегрування рівний зі знаком "мінус" інтегралу по протилежному напрямку обходу області інтегрування\\
+( тобто $\int_{\Gamma_{-}}^{ }= - \int_{\Gamma_{+}}^{ }$), тому 
+\[\begin{array}{l}
+=\frac{1}{2\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f(\xi)}{\xi}d\xi - \int_{\Gamma_{+}}^{ }\frac{f(x)}{x})dx)=
+\end{array} \]
+ Записавши межі інтегрування в параметричному вигляді, отримаємо 
+ \[\begin{array}{l}
+ = \frac{1}{2i\pi}(\int_{0}^{2\pi }f(Re^{i\theta})\frac{iRe^{i\theta}}{Re^{i\theta }}d\theta  + \int_{0}^{2\pi }f(\left |q \right |Re^{i\theta })\frac{i\left |q \right |Re^{i\theta }}{\left |q \right |Re^{i\theta }}d\theta)=
+\end{array} \] 
+\[\begin{array}{l}
+= \frac{1}{2\pi}(\int_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int_{0}^{2\pi}f(\left |q \right |Re^{i\theta })d\theta) = 
+\end{array} \]
+Зробимо наступні заміни змінних:
+\begin{equation}\label{th22}
+\begin{array}{l}
+\theta =\varphi +\alpha 
+\end{array} 
+\end{equation}
+\begin{equation}\label{th23}
+\begin{array}{l}
+q=\left |q  \right |e^{i\alpha }
+\end{array} 
+\end{equation}
+і отримаємо
+\[\begin{array}{l}
+= \frac{1}{2\pi}(\int_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int_{-\alpha}^{2\pi-\alpha}f(qRe^{i\varphi })d\varphi)=
+\end{array} \]
+а змінивши межі інтегрування другого інтеграла ($2\pi-\alpha->2\pi$, $ -\alpha->0$, $ \\
+f(Re^{i\varphi})->f(Re^{i\theta})$, згідно $\eqref {th22} $)
+\[\begin{array}{l}
+=\frac{1}{2\pi}(\int_{0}^{2\pi} f(Re^{i\theta})d\theta - \int_{0}^{2\pi}f(Re^{i\theta })d\theta)=0,
+\end{array}\]
+що і потрібно було довести.
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
 
-\emph{Твердження4:} Для $z \in \mathbb{Z}^{*}$ покладемо
-  \begin{center}
-	$S(z)= \prod_{0}^{+\infty } ( 1-q^{n}z ) \prod_{1}^{+\infty }( 1-q^{n}z^{-1} )$
-  \end{center} Тоді виконується $S(qz)=-z^{-1}S(z)$ (1), $S(\frac{1}{z}=-z^{-1}S(z)$ (2)\\
-Доведення:........................................\\
-$S(qz)= \prod_{0}^{+\infty } ( 1-q^{n+1}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}{qz})=
- \prod_{0}^{+\infty } ( 1-qq^{n}z ) \prod_{1}^{+\infty }( 1-\frac{1}{q}\frac{q^{n}}{z})=$, зробимо заміни: для першого добутку $n+1=m$, для другого $n-1=m$, тоді $=\prod_{1}^{+\infty } ( 1-q^{m}z ) \prod_{0}^{+\infty }( 1-\frac{q^{m}}{z})=\frac{\prod_{0}^{+\infty } ( 1-q^{m}z )}{1-z}(1-\frac{1}{z})\prod_{1}^{+\infty }( 1-\frac{q^{m}}{z})=-z^{-1}S(z)$ \\
- $S(\frac{1}{z})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{1}{z} ) \prod_{1}^{+\infty }( 1-q^{n}z)=$, домножимо перший добуток на $(1-q^{0}\frac{1}{z})$, а другий на $(1-z)$, тоді $=\prod_{1}^{+\infty } ( 1-q^{n}\frac{1}{z} )(1-q^{0}\frac{1}{z})\frac{ \prod_{0}^{+\infty }( 1-q^{n}z)}{1-z}=-z^{-1}S(z)$\\
+\newtheorem{nasl}{Наслідок}
+\begin{nasl}
+ Кожна не стала локсодромна функція з мультиплікатором $q$ має що найменше 2 полюси( і 2 нулі ) в кожному кільці $C_{q}(R)$.
+\end{nasl}
+\begin{proof}
+$f \neq const $, тому $f$ не голоморфна.(Бо  комплексна функція $u+i*v=f(x+i*y)$ є голоморфною тоді і тільки тоді, коли виконуються умови Коші — Рімана
+$\frac{\partial u}{\partial x}=\frac{\partial v}{\partial y};
+\frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}$ )(Ненульові лишки лише в полюсах)??    Сума лишків в полюсах( у всіх ізольованих особливих точках) рівна нулю. ???? Доводимо від супротивного- полюсів $0$ або $1$.\\
+Якщо нема жодного полюса, то $f$ голоморфна і стала за попередньою теоремою. \\
+Якщо полюс один, то оскільки лишок -це $-1$ коефіцієнт розвинення функції в ряд Лорана, тобто $c_{-1}$, то він за попередньою теоремою рівний нулю.Отримали суперечність.\\
+Тобто, справді кожна не стала локсодромна функція має щонайменше 2 полюси в кожному кільці $C_{q}(R)$.
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
+
+\begin{thm}
+Нехай $f\in L_{q}$-кільце, таке як в теоремі 2. Нехай $m_{a}(n_{b})$ позначають кількість нулів(полюсів) $f \in C_{q}(R)$. Тоді 
+\begin{center}
+$\sum m_{a}=\sum n_{b}$
+\end{center}
+\end{thm}
+\begin{proof}
+
+\begin{equation}\label{arg}
+\begin{array}{l}                    
+(N-P=\frac{1}{2\pi} \Delta_{\partial G} Arg f(z) =i\sum_{z_k\in G}^{ } res \frac{f^{'}(z)}{f(z)} = \frac{1}{2i\pi}\int_{\partial G}^{ }\frac{f^{'}(z)}{f(z)} dz) 
+\end{array}
+\end{equation}
+Застосуємо принцип аргумента  $\eqref {arg} $
+\[\begin{array}{l}
+\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz)=
+\end{array}\]
+та міркування(виконаємо дії) аналогічні до міркувань в теоремі 2
+\[\begin{array}{l}
+= \frac{1}{2i\pi}(\int_{0}^{2\pi }iqRe^{i\varphi}\frac{f^{'}(qRe^{\varphi})}{f(qRe^{i\varphi })}d\varphi -
+    \int_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=
+\end{array}\]
+\[\begin{array}{l}
+= \frac{1}{2i\pi}(\int_{0}^{2\pi }\frac{1}{q}iqRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi -
+    \int_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=0.
+\end{array}\]
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
+
+
+
+2 спосіб.
+\[\begin{array}{l}
+\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz)= \\
+$ зробивши заміну $z=q\xi$  та перейшовши від $\Gamma$ до $\Gamma^{'}$, отримаємо $\\
+= \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi - \int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(q\xi )}{f(q\xi) }d(q\xi)) = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi - \int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{qf(\xi) }qd\xi)=0 \\
+$ оскільки $ f(q\xi)=f(\xi)$, $qf^{'}(q\xi)=f^{'}(\xi).
+\end{array}\]
+\[\begin{array}{l}
+\end{array} \]
+
+\begin{twerd} Для $z \in \mathbb{Z}^{*}$ покладемо
+\[\begin{array}{l} 
+ S(z)= \prod_{0}^{+\infty } ( 1-q^{n}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}{z})
+ \end{array}\]
+Тоді
+\begin{equation}\label{s1}
+\begin{array}{l}
+   S(qz)=-\frac{1}{z}S(z)
+ \end{array}
+\end{equation}  
+\begin{equation}\label{s2}
+\begin{array}{l}        
+   S(\frac{1}{z})= -\frac{1}{z}S(z)
+\end{array}
+\end{equation}
+\end{twerd}
+\begin{proof}
+\[\begin{array}{l} 
+S(qz)= \prod_{0}^{+\infty } ( 1-q^{n+1}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}{qz})=
+ \prod_{0}^{+\infty } ( 1-qq^{n}z ) \prod_{1}^{+\infty }( 1-\frac{1}{q}\frac{q^{n}}{z})=
+ \end{array}\]
+зробимо заміни: для першого добутку $n+1=m$, для другого $n-1=m$, тоді 
+\[\begin{array}{l} 
+ =\prod_{1}^{+\infty } ( 1-q^{m}z ) \prod_{0}^{+\infty }( 1-\frac{q^{m}}{z})=\frac{\prod_{0}^{+\infty } ( 1-q^{m}z )}{1-z}(1-\frac{1}{z})\prod_{1}^{+\infty }( 1-\frac{q^{m}}{z})=-z^{-1}S(z)
+\end{array}\]
+\[\begin{array}{l} 
+ S(\frac{1}{z})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{1}{z} ) \prod_{1}^{+\infty }( 1-q^{n}z)=
+\end{array}\]
+домножимо перший добуток на $(1-q^{0}\frac{1}{z})$, а другий на $(1-z)$, тоді 
+\[\begin{array}{l} 
+  =\prod_{1}^{+\infty } ( 1-q^{n}\frac{1}{z} )(1-q^{0}\frac{1}{z})\frac{    \prod_{0}^{+\infty }( 1-q^{n}z)}{1-z}=-z^{-1}S(z)
+ \end{array}\]
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
+
+Тепер розглянемо $a_{1},...,a_{m},b_{1},...,b_{m}\in \mathbb{C}^{*}$ такі що\\
+\begin{equation}\label{w1}
+\begin{array}{l} 
+ a_{i}\neq b_{j}$  i  $a_{1}*...*a_{m}=b_{1}*...*b_{m}
+\end{array}
+\end{equation} 
+
+Якщо для $z \in \mathbb{C}^{*}$ не рівному $b_{1},...,b_{m}$ по модулю $\left \langle q \right \rangle $ ми покладемо
+\begin{center}
+\[ M(z)=\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})}\]
+\end{center}
+тоді бачимо, що $M$ мероморфна функція на $\mathbb{C}^{*}$, її полюси конгруентні $b_{1},...,b_{m}\mod \left \langle q \right \rangle $. Більше того, з $\eqref{s1}$ і $\eqref{s2}$ випливає
+
+\begin{equation}\label{q2}
+\begin{array}{l} 
+ M(qz)=M(z)$,  $M(\frac{1}{z})=\frac{S(a_{1}z)...S(a_{m}z)}{S(b_{1}z)...S(b_{m}z)}     
+\end{array}
+\end{equation}  
  
-Розглянемо $a_{1},...,a_{m},b_{1},...,b_{m}\in \mathbb{C}^{*}$ такі що\\
- $a_{i}\neq b_{j}$ i $a_{1}*...*a_{m}=b_{1}*...*b_{m}$.(*)\\
+тобто зокрема ми бачимо, що $M\in L_{q}$(локсодромна).\\
+Перевіримо $\eqref{q2}$:\\  
+ \[\begin{array}{l}
+ M(qz)=\frac{S(\frac{qz}{a_{1}})...S(\frac{qz}{a_{m}})}{S(\frac{qz}{b_{1}})...S(\frac{qz}{b_{m}})}=
+ \end{array}\]
+ застосуємо рівність $\eqref{s1}$
+\[\begin{array}{l}
+=\frac{ (-1)^{m} \frac{a_{1}}{z} S(\frac{z}{a_{1}})...\frac{a_{m}}{z} S(\frac{z}{a_{m}}) }{ (-1)^{m} \frac{b_{1}}{z} S(\frac{z}{b_{1}})...\frac{b_{m}}{z} S(\frac{z}{b_{m}}) }
 
-Якщо для $z \in \mathbb{C}^{*}$ не рівному $b_{1},...,b_{m}$ по модулю $\left \langle q \right \rangle $ ми покладемо $M(z)=\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})}$,тоді бачимо, що $M$ мероморфна функція на $\mathbb{C}^{*}$, її полюси конгруентні $b_{1},...,b_{m}\mod \left \langle q \right \rangle $. Більше того, з (1) і (2) випливає $M(qz)=M(z)$, $M(\frac{1}{z})=\frac{S(a_{1}z)...S(a_{m}z)}{S(b_{1}z)...S(b_{m}z)}$ (**), тобто зокрема ми бачимо, що $M\in L_{q}$(локсодромна).\\
-Перевіримо це:\\
-$M(qz)=\frac{S(\frac{qz}{a_{1}})...S(\frac{qz}{a_{m}})}{S(\frac{qz}{b_{1}})...S(\frac{qz}{b_{m}})}$\\
-$S(\frac{qz}{a_{j}})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{qz}{a_{j}} ) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{qz}) =?????????????????????????????????????= \frac{1}{1-\frac{z}{a_{j}}} \prod_{0}^{+\infty } ( 1-q^{n}\frac{z}{a_{j}}) (1-\frac{a_{j}}{z}) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{z})=$
-(оскільки $ \frac{\frac{z-a_{j}}{z}}{\frac{a_{j}-z}{a_{j}}}= \frac{(z-a_{j})a_{j}}{-(z-a_{j})z}=-\frac{a_{j}}{z} $, тому)
-$=-\frac{a_{j}}{z}S(\frac{z}{a_{j}})$\\
-$S(\frac{z}{a_{j}})=  \prod_{0}^{+\infty } ( 1-q^{n}\frac{z}{a_{j}} ) \prod_{1}^{+\infty }( 1-q^{n}\frac{a_{j}}{z})$.\\
- Тодi
-$M(qz)=\frac{ (-1)^{m} \frac{a_{1}}{z} S(\frac{z}{a_{1}})...\frac{a_{m}}{z} S(\frac{z}{a_{m}}) }{ (-1)^{m} \frac{b_{1}}{z} S(\frac{z}{b_{1}})...\frac{b_{m}}{z} S(\frac{z}{b_{m}}) }=\frac{ a_{1}*...*a_{m}}{b_{1}*...*b_{m}}M(z)=$ (зважаючи на (*)) $=M(z)$\\
+=\frac{ a_{1}*...*a_{m}}{b_{1}*...*b_{m}}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})}=
+\end{array}\]
+\[\begin{array}{l}
+=\frac{ a_{1}*...*a_{m}}{b_{1}*...*b_{m}}M(z) 
+\end{array}\]
+зважаючи на $\eqref{w1}$, отримаємо
+$M(qz)=M(z)$\\
 
-\emph{Теорема4:} Для кожного $R$ на межі $C_{q}(R)$, яка не містить ні нулів, ні полюсів локсодромної функції $f\in L_{q}$, нехай $\lambda=\frac{(a_{1}...a_{m})}{(b_{1}...b_{m})}$ , де $a_{1},...,a_{m}$- нулі $f\in L_{q}$, $b_{1},...,b_{m}$- полюси $f\in L_{q}$. Тоді $\lambda\in \left \langle q \right \rangle$. ($ \exists n:\lambda =q^{n}$)\\
-Доведення:\\
-Першу рівність з (**) перепишемо:$ M(qz)=\lambda M(z)$. Розглянемо функцію:$ g(z)=\frac{f(z)}{M(z)}$. За побудовою $М$, $g$ не має ні нулів, ні полюсів в $C_{q}(R)$ (бо $M$ має ті ж нулі і полюси, що й $f$). Звідси слідує, що $g$ ціла так само, як $\frac{1}{g}$.\\
-$g(qz)=\frac{f(qz)}{M(qz)}=\frac{f(z)}{\lambda M(z)}=\frac{1}{\lambda}g(z)$ (1)\\
-Нехай $\sum_{-\infty}^{+\infty}c_{n}z^{n}$-розвинення в ряд Лорана функції $g$ в $\mathbb{C}^{*}$.\\
-$g(z)=\sum_{-\infty}^{+\infty}c_{n}z^{n}$, $g(qz)=\sum_{-\infty}^{+\infty}c_{n}q^{n}z^{n}=\frac{1}{\lambda}g(z)$\\
-З огляду на (1) і того, що хоча б один з $c_{n}$ ($\exists k: c_{k}\neq 0$) відмінний від нуля, ми бачимо, що $(\lambda q^{n}-1)c_{n}=0$, отже $\lambda= q^{-n}\in \left \langle q \right \rangle $.\\
+Аналогічно застосувавши $\eqref{s2}$ і $\eqref{w1}$, отримаємо\\
+\[\begin{array}{l}
+M(\frac{1}{z})=\frac{S(\frac{1}{za_{1}})...S(\frac{1}{za_{m}})}{S(\frac{1}{zb_{1}})...S(\frac{1}{zb_{m}})}= 
+\frac{(-1)^m \frac{1}{za_{1}} S(za_{1})...\frac{1}{za_{m}} S(za_{m})}{(-1)^m \frac{1}{zb_{1}} S(zb_{1})...\frac{1}{zb_{m}} S(zb_{m})}=
+\end{array}\]
+\[\begin{array}{l}
+= \frac{b_{1}...b_{m}}{a_{1}...a_{m}}
+\frac{ S(za_{1})...S(za_{m})}{S(zb_{1})...S(zb_{m})}=\frac{ S(za_{1})...S(za_{m})}{S(zb_{1})...S(zb_{m})}  
+\end{array} \]
+\[\begin{array}{l}
+\end{array} \]
+
+\begin{thm}
+Для кожного $R$ на межі $C_{q}(R)$, яка не містить ні нулів, ні полюсів локсодромної функції $f\in L_{q}$, нехай $\lambda=\frac{(a_{1}...a_{m})}{(b_{1}...b_{m})}$ , де $a_{1},...,a_{m}$- нулі $f\in L_{q}$, $b_{1},...,b_{m}$- полюси $f\in L_{q}$. Тоді $\lambda\in \left \langle q \right \rangle$. ($ \exists n:\lambda =q^{n}$)
+\end{thm}
+\begin{proof}
+Першу рівність з $\eqref{q2}$ перепишемо:
+\[\begin{array}{l}
+ M(qz)=\lambda M(z).
+ \end{array}\]
+ Розглянемо функцію:
+ \[\begin{array}{l}
+ g(z)=\frac{f(z)}{M(z)}.
+  \end{array}\]
+  Згідно побудови $M$,бачимо, що $g$ не має ні нулів, ні полюсів в $C_{q}(R)$ (бо $M$ має ті ж нулі і полюси, що й $f$). Звідси слідує, що $g$ ціла так само, як $\frac{1}{g}$.
+\begin{equation}\label{th41}
+\begin{array}{l}
+g(qz)=\frac{f(qz)}{M(qz)}=\frac{f(z)}{\lambda M(z)}=\frac{1}{\lambda}g(z)
+\end{array}
+\end{equation}
+Нехай $\sum_{-\infty}^{+\infty}c_{n}z^{n}$-розвинення в ряд Лорана функції $g$ в $\mathbb{C}^{*}.\\$
+ \[\begin{array}{l}
+g(z)=\sum_{-\infty}^{+\infty}c_{n}z^{n},
+ \end{array}\]
+ \[\begin{array}{l}
+ g(qz)=\sum_{-\infty}^{+\infty}c_{n}q^{n}z^{n}=\frac{1}{\lambda}g(z)
+  \end{array}\]
+З огляду на $\eqref {th41} $ і того, що хоча б один з $c_{n}$ ($\exists k: c_{k}\neq 0$) відмінний від нуля, ми бачимо, що 
+ \[\begin{array}{l}
+ (\lambda q^{n}-1)c_{n}=0,
+  \end{array}\]
+  отже 
+ \[\begin{array}{l} 
+ \lambda= q^{-n}\in \left \langle q \right \rangle .
+ \end{array}\]
 Розвинення в ряд Лорана єдине, тому коефіцієнти при відповідних степенях рівні.
-$c_{k}q^{k}=\frac{1}{\lambda} c_{k}$ $\Rightarrow$ $(q^{k}\lambda -1)c_{k}=0$, $c_{k}\neq 0$ $\Rightarrow$  $\lambda=q^{-k}$.\\
-??????Для $g(z)$ лише одне $ c_{k}\neq 0$. ????\\
+\[\begin{array}{l}
+c_{k}q^{k}=\frac{1}{\lambda} c_{k}$ $\Rightarrow$ $(q^{k}\lambda -1)c_{k}=0,
+ \end{array}\]
+\[\begin{array}{l}
+c_{k}\neq 0$ $\Rightarrow$  $\lambda=q^{-k}.
+ \end{array}\]
+??????Для $g(z)$ лише одне $ c_{k}\neq 0$. ????
+\end{proof}
+\[\begin{array}{l}
+\end{array} \]
 
-\emph{Теорема5:}Якщо $\lambda =q^{n}$, $f$- локсодромна функція з теореми 4, то  $f$ має вигляд\\
- \begin{center}
- $f(z)= C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{zq^{n}}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}$
- \end{center}
-Доведення:\\
-$g(z)=\frac{f(z)}{M(z)}\Rightarrow f(z)=M(z)g(z)= M(z)z^{n}c_{n}=$, позначивши $c_{n}=C$, отримаємо $=Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})}$ (2)\\
-$f(z)=C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{zq^{n}}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}= C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{(-1)^{n}\frac{b_{1}^{n}}{z^{n}} S(\frac{z}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}=(2)$, оскільки\\
-$S(\frac{zq^{n}}{b_{1}})= -\frac{b_{1}}{z}S(\frac{zq^{n-1}}{b_{1}})=(-1)^{n}\frac{b_{1}^{n}}{z^{n}}S(\frac{z}{b_{1}})$.\\
-А константа $C$ дорівнює $(-1)^{n}b_{1}^{-n}$.\\
+\begin{thm}
+Якщо $\lambda =q^{n}$, $f$- локсодромна функція з теореми 4, то  $f$ має вигляд
+\begin{equation}\label{th51}
+\begin{array}{l}
+ f(z)= C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{zq^{n}}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}
+\end{array}
+\end{equation}
+ \end{thm}
+\begin{proof}
+\[\begin{array}{l}
+g(z)=\frac{f(z)}{M(z)}\Rightarrow f(z)=M(z)g(z)= M(z)z^{n}c_{n}
+ \end{array}\]
+ позначивши $c_{n}=C$, отримаємо 
+ \begin{equation}\label{th52}
+\begin{array}{l} 
+f(z) =Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})} 
+\end{array}
+  \end{equation}
+\[\begin{array}{l}
+f(z)=C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{zq^{n}}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}= 
+ \end{array}\]
+оскільки
+\[\begin{array}{l}
+S(\frac{zq^{n}}{b_{1}})= -\frac{b_{1}}{z}S(\frac{zq^{n-1}}{b_{1}})=(-1)^{n}\frac{b_{1}^{n}}{z^{n}}S(\frac{z}{b_{1}}).
+ \end{array}\]
+тому
+\[\begin{array}{l}
+ =C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{(-1)^{n}\frac{b_{1}^{n}}{z^{n}} S(\frac{z}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}=Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})} 
+  \end{array}\]
+А константа $C$ дорівнює $(-1)^{n}b_{1}^{-n}$.
+\end{proof}
 
-І так далі\cite{web}
 
 \clearpage
-\section{<РОЗДІЛ Основне завдання\#>}
-
-
-
+\section{Приклади}
 І так далі\cite{web}
+
+
 
 \clearpage
 \addcontentsline{toc}{section}{Література}
 \begin{thebibliography}{9}
 
-  \bibitem{alias}<АВТОР> \emph{<КНИГА>},
-    <ВИДАВНИЦТВО> <РІК>, <К-КІСТЬ СТОРІНОК> ст.
+  \bibitem{alias}<Yves Hellegouarch> \emph{<Invitation to the mathematics of Fermat-Wiles>},
+    <2001>, <385> ст.
     
+  \bibitem{alias}<Гольдберг А.А., Шеремета М.М.> \emph{<Аналітичні функції>},
+    <Київ НМК ВО> <1991>, <115> ст.
+      
   \bibitem{web}<АВТОР> \emph{<НАЗВА>} [Електронний ресурс],
     <РІК>. Режим доступу:
     \url{https://github.com/Uko/thesis-template}
