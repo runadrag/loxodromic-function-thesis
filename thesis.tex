@@ -212,7 +212,7 @@ log\vert q \vert \leq n log\vert q\vert +log \vert z\vert \leq 0
 Тобто $f$ компактна в $\mathbb{C}^{*}$. \\
 А оскільки $f$ компактна в проколеній площині $\mathbb{C}^{*}$, то вона обмежена в околі нуля. Отже, $0$- усувна точка і $f$ по неперервності продовжується
 \[\begin{array}{l}
-  f(0)=\lim_{z\rightarrow 0} f(z)
+  f(0)=\lim\limits_{z\rightarrow 0} f(z)
 \end{array}\]
 Тому 
 \[\begin{array}{l}
@@ -236,7 +236,7 @@ C_{q}(R)=\lbrace z\in \mathbb{C}:\left |q  \right |R\leq \left |z  \right |<R \r
 \begin{proof}
  Межа кільця $C_{q}(R)$ має вигляд $\lbrace z\in \mathbb{C}:\left |q  \right |R< \left |z  \right |<R \rbrace$, адже межею є відкрита множина, але задля спрощення записів, розглядатимемо суму лишків на $C_{q}(R)$, маючи на увазі його межу. Згідно з теоремою Коші про лишки
  \[\begin{array}{l}
-\sum_{b_{j}\in C_{q}(R)}^{ } resf(z)= \frac{1}{2i\pi}\int_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz
+\sum \limits_{ b_{j}\in C_{q}(R)} resf(z)= \frac{1}{2i\pi}\int \limits_{\partial C_{q}(R)} \frac{f(z)}{z}dz
 \end{array} \]
 Нехай $\Gamma$, $\Gamma^{'}$ позначають кола, які обмежують $C_{q}(R)$.\\
 \includegraphics[scale=0.5]{1..PNG}\\
@@ -481,11 +481,9 @@ c_{k}\neq 0$ $\Rightarrow$  $\lambda=q^{-k}.
 g(z)=\frac{f(z)}{M(z)}\Rightarrow f(z)=M(z)g(z)= M(z)z^{n}c_{n}
  \end{array}\]
  позначивши $c_{n}=C$, отримаємо 
- \begin{equation}\label{th52}
-\begin{array}{l} 
+\[\begin{array}{l} 
 f(z) =Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})} 
-\end{array}
-  \end{equation}
+\end{array}\]
 \[\begin{array}{l}
 f(z)=C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{zq^{n}}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}= 
  \end{array}\]
@@ -497,7 +495,7 @@ S(\frac{zq^{n}}{b_{1}})= -\frac{b_{1}}{z}S(\frac{zq^{n-1}}{b_{1}})=(-1)^{n}\frac
 \[\begin{array}{l}
  =C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{(-1)^{n}\frac{b_{1}^{n}}{z^{n}} S(\frac{z}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}=Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})} 
   \end{array}\]
-А константа $C$ дорівнює $(-1)^{n}b_{1}^{-n}$.
+Ми отримали $\eqref{th51}$. При чому константа $C$ дорівнює $(-1)^{n}b_{1}^{-n}$.
 \end{proof}
 
 
@@ -516,7 +514,10 @@ S(\frac{zq^{n}}{b_{1}})= -\frac{b_{1}}{z}S(\frac{zq^{n-1}}{b_{1}})=(-1)^{n}\frac
 Перевіримо, що $\rho(z)$ локсодромна функція:\\
 \[\begin{array}{l}
  \rho(qz)=\sum^{+\infty}_{-\infty}  \frac{q^{n+1}z}{(1-q^{n+1}z)^2}=
- \sum^{+\infty}_{-\infty}  \frac{qq^{n}z}{(1-qq^{n}z)^2}=
+\end{array}\]
+зробивши заміну $n+1=m$, отримаємо
+\[\begin{array}{l}
+=\sum^{+\infty}_{-\infty}  \frac{q^{m}z}{(1-q^{m}z)^2}=\rho(z)
 \end{array}\]
 \end{pryk}
 \[\begin{array}{l}
