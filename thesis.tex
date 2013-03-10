@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{article}
+ \documentclass[12pt,a4paper]{article}
 
 \usepackage{fontspec}
 \usepackage{polyglossia}
@@ -136,14 +136,14 @@ $f_{1}(qz)$, $f_{2}(qz)$ - мероморфні, частка двох меро�
 Будь-яка функція 
 \begin{equation}\label{eq1}
 \begin{array}{l}
-g(z)=f(e^{2iz\pi/\omega_{1}})
+g(z)=f(e^{\frac{2iz\pi}{\omega_{1}}})
 \end{array}
 \end{equation}
 є періодичною з періодом $\omega_{1}$.
 \end{zauv}
 Переконаємось, що це зауваження вірне: 
 \[\begin{array}{l}
-g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e^{  2iz\pi / \omega_{1}  +2i\pi } ) = f(  e^{  2iz\pi / \omega_{1}  } ) = g(z) 
+g(  z+\omega_{1}  ) = f(  e^{\frac{2i\pi (z+\omega_{1})}{\omega_{1}} }  ) =  f(  e^{\frac{2iz\pi }{ \omega_{1}}  +2i\pi } ) = f(  e^{\frac {2iz\pi}{\omega_{1}}} ) = g(z) 
 \end{array}\]
 \[\begin{array}{l}
 \end{array} \]
@@ -151,9 +151,9 @@ g(  z+\omega_{1}  ) = f(  e^{  2i\pi (z+\omega_{1})  / \omega_{1}  }  ) =  f(  e
 \begin{twerd}
  Якщо $f$  -локсодромна з мультиплікатором $q$, то  
 \[\begin{array}{l}
-g(z)=f(e^{2iz\pi/\omega_{1}})
+g(z)=f(e^{\frac{2iz\pi}{\omega_{1}}})
 \end{array}\] 
-є подвійно періодичною, a $q=e^{2i\pi \omega_{2}/ \omega_{1}}$, $q<1$, $Im(\omega_{2}/\omega_{1})>0$
+є подвійно періодичною, a $q=e^{\frac{2i\pi \omega_{2}}{ \omega_{1}}}$, $q<1$, $Im(\omega_{2}/\omega_{1})>0$
 \end{twerd}
 \begin{proof}
 \[\begin{array}{l}
@@ -250,16 +250,16 @@ C_{q}(R)=\lbrace z\in \mathbb{C}:\left |q  \right |R\leq \left |z  \right |<R \r
 = \frac{1}{2i\pi} (\int_{\Gamma^{'}_{+}}^{ }\frac{f(\xi)}{\xi}d\xi  + \int_{\Gamma_{-}}^{ }\frac{f(x)}{x}dx)=
 \end{array} \]
 оскільки інтеграл по правильному напрямку обходу області інтегрування рівний зі знаком "мінус" інтегралу по протилежному напрямку обходу області інтегрування\\
-( тобто $\int_{\Gamma_{-}}^{ }= - \int_{\Gamma_{+}}^{ }$), тому 
+( тобто $\int\limits_{\Gamma_{-}}= - \int\limits_{\Gamma_{+}}$), тому 
 \[\begin{array}{l}
-=\frac{1}{2\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f(\xi)}{\xi}d\xi - \int_{\Gamma_{+}}^{ }\frac{f(x)}{x})dx)=
+=\frac{1}{2\pi}(\int\limits_{\Gamma^{'}_{+}} \frac{f(\xi)}{\xi}d\xi - \int\limits_{\Gamma_{+}}\frac{f(x)}{x})dx)=
 \end{array} \]
  Записавши межі інтегрування в параметричному вигляді, отримаємо 
  \[\begin{array}{l}
- = \frac{1}{2i\pi}(\int_{0}^{2\pi }f(Re^{i\theta})\frac{iRe^{i\theta}}{Re^{i\theta }}d\theta  + \int_{0}^{2\pi }f(\left |q \right |Re^{i\theta })\frac{i\left |q \right |Re^{i\theta }}{\left |q \right |Re^{i\theta }}d\theta)=
+ = \frac{1}{2i\pi}(\int\limits_{0}^{2\pi }f(Re^{i\theta})\frac{iRe^{i\theta}}{Re^{i\theta }}d\theta  + \int\limits_{0}^{2\pi }f(\left |q \right |Re^{i\theta })\frac{i\left |q \right |Re^{i\theta }}{\left |q \right |Re^{i\theta }}d\theta)=
 \end{array} \] 
 \[\begin{array}{l}
-= \frac{1}{2\pi}(\int_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int_{0}^{2\pi}f(\left |q \right |Re^{i\theta })d\theta) = 
+= \frac{1}{2\pi}(\int\limits_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int\limits_{0}^{2\pi}f(\left |q \right |Re^{i\theta })d\theta) = 
 \end{array} \]
 Зробимо наступні заміни змінних:
 \begin{equation}\label{th22}
@@ -274,12 +274,12 @@ q=\left |q  \right |e^{i\alpha }
 \end{equation}
 і отримаємо
 \[\begin{array}{l}
-= \frac{1}{2\pi}(\int_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int_{-\alpha}^{2\pi-\alpha}f(qRe^{i\varphi })d\varphi)=
+= \frac{1}{2\pi}(\int\limits_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int\limits_{-\alpha}^{2\pi-\alpha}f(qRe^{i\varphi })d\varphi)=
 \end{array} \]
 а змінивши межі інтегрування другого інтеграла ($2\pi-\alpha->2\pi$, $ -\alpha->0$, $ \\
 f(Re^{i\varphi})->f(Re^{i\theta})$, згідно $\eqref {th22} $)
 \[\begin{array}{l}
-=\frac{1}{2\pi}(\int_{0}^{2\pi} f(Re^{i\theta})d\theta - \int_{0}^{2\pi}f(Re^{i\theta })d\theta)=0,
+=\frac{1}{2\pi}(\int\limits_{0}^{2\pi} f(Re^{i\theta})d\theta - \int\limits_{0}^{2\pi}f(Re^{i\theta })d\theta)=0,
 \end{array}\]
 що і потрібно було довести.
 \end{proof}
@@ -295,11 +295,11 @@ f(Re^{i\varphi})->f(Re^{i\theta})$, згідно $\eqref {th22} $)
 Якщо нема жодного полюса, то $f$ голоморфна і стала за теоремою 1, що суперечить припущенню нашого наслідка. \\
 Припустимо, що наша локсодромна функція має один полюс. За теоремою Коші про лишки
 \[\begin{array}{l}
-\frac{1}{2i\pi}\int_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz 
+\frac{1}{2i\pi}\int\limits_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz 
 \end{array}\]
 \begin{equation}\label{nasl1}
 \begin{array}{l}
-\frac{1}{2i\pi}\int_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz= resf(z)\vert_{z=b} \neq 0 
+\frac{1}{2i\pi}\int\limits_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz= resf(z)\big\vert_{z=b} \neq 0 
 \end{array} 
 \end{equation}
 бо $0$ тоді і лише тоді, коли $f$ голоморфна.
@@ -319,21 +319,21 @@ $\sum m_{a}=\sum n_{b}$
 
 \begin{equation}\label{arg}
 \begin{array}{l}                    
-(N-P=\frac{1}{2\pi} \Delta_{\partial G} Arg f(z) =i\sum_{z_k\in G}^{ } res \frac{f^{'}(z)}{f(z)} = \frac{1}{2i\pi}\int_{\partial G}^{ }\frac{f^{'}(z)}{f(z)} dz) 
+(N-P=\frac{1}{2\pi} \Delta_{\partial G} Arg f(z) =i\sum\limits_{z_k\in G} res \frac{f^{'}(z)}{f(z)} = \frac{1}{2i\pi}\int\limits_{\partial G}^{ }\frac{f^{'}(z)}{f(z)} dz) 
 \end{array}
 \end{equation}
 Застосуємо принцип аргумента  $\eqref {arg} $
 \[\begin{array}{l}
-\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz)=
+\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int\limits_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int\limits_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz)=
 \end{array}\]
 та міркування(виконаємо дії) аналогічні до міркувань в теоремі 2
 \[\begin{array}{l}
-= \frac{1}{2i\pi}(\int_{0}^{2\pi }iqRe^{i\varphi}\frac{f^{'}(qRe^{\varphi})}{f(qRe^{i\varphi })}d\varphi -
-    \int_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=
+= \frac{1}{2i\pi}(\int\limits_{0}^{2\pi }iqRe^{i\varphi}\frac{f^{'}(qRe^{\varphi})}{f(qRe^{i\varphi })}d\varphi -
+    \int\limits_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=
 \end{array}\]
 \[\begin{array}{l}
-= \frac{1}{2i\pi}(\int_{0}^{2\pi }\frac{1}{q}iqRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi -
-    \int_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=0.
+= \frac{1}{2i\pi}(\int\limits_{0}^{2\pi }\frac{1}{q}iqRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi -
+    \int\limits_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=0.
 \end{array}\]
 \end{proof}
 \[\begin{array}{l}
@@ -341,7 +341,7 @@ $\sum m_{a}=\sum n_{b}$
 
 \begin{twerd} Для $z \in \mathbb{Z}^{*}$ покладемо
 \[\begin{array}{l} 
- S(z)= \prod_{0}^{+\infty } ( 1-q^{n}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}{z})
+ S(z)= \prod\limits_{0}^{+\infty } ( 1-q^{n}z ) \prod\limits_{1}^{+\infty }( 1-\frac{q^{n}}{z})
  \end{array}\]
 Тоді
 \begin{equation}\label{s1}
@@ -357,19 +357,19 @@ $\sum m_{a}=\sum n_{b}$
 \end{twerd}
 \begin{proof}
 \[\begin{array}{l} 
-S(qz)= \prod_{0}^{+\infty } ( 1-q^{n+1}z ) \prod_{1}^{+\infty }( 1-\frac{q^{n}}{qz})=
- \prod_{0}^{+\infty } ( 1-qq^{n}z ) \prod_{1}^{+\infty }( 1-\frac{1}{q}\frac{q^{n}}{z})=
+S(qz)= \prod\limits_{0}^{+\infty } ( 1-q^{n+1}z ) \prod\limits_{1}^{+\infty }( 1-\frac{q^{n}}{qz})=
+ \prod\limits_{0}^{+\infty } ( 1-qq^{n}z ) \prod\limits_{1}^{+\infty }( 1-\frac{1}{q}\frac{q^{n}}{z})=
  \end{array}\]
 зробимо заміни: для першого добутку $n+1=m$, для другого $n-1=m$, тоді 
 \[\begin{array}{l} 
- =\prod_{1}^{+\infty } ( 1-q^{m}z ) \prod_{0}^{+\infty }( 1-\frac{q^{m}}{z})=\frac{\prod_{0}^{+\infty } ( 1-q^{m}z )}{1-z}(1-\frac{1}{z})\prod_{1}^{+\infty }( 1-\frac{q^{m}}{z})=-z^{-1}S(z)
+ =\prod\limits_{1}^{+\infty } ( 1-q^{m}z ) \prod\limits_{0}^{+\infty }( 1-\frac{q^{m}}{z})=\frac{\prod\limits_{0}^{+\infty } ( 1-q^{m}z )}{1-z}(1-\frac{1}{z})\prod\limits_{1}^{+\infty }( 1-\frac{q^{m}}{z})=-z^{-1}S(z)
 \end{array}\]
 \[\begin{array}{l} 
- S(\frac{1}{z})= \prod_{0}^{+\infty } ( 1-q^{n}\frac{1}{z} ) \prod_{1}^{+\infty }( 1-q^{n}z)=
+ S(\frac{1}{z})= \prod\limits_{0}^{+\infty } ( 1-q^{n}\frac{1}{z} ) \prod\limits_{1}^{+\infty }( 1-q^{n}z)=
 \end{array}\]
 домножимо перший добуток на $(1-q^{0}\frac{1}{z})$, а другий на $(1-z)$, тоді 
 \[\begin{array}{l} 
-  =\prod_{1}^{+\infty } ( 1-q^{n}\frac{1}{z} )(1-q^{0}\frac{1}{z})\frac{    \prod_{0}^{+\infty }( 1-q^{n}z)}{1-z}=-z^{-1}S(z)
+  =\prod\limits_{1}^{+\infty } ( 1-q^{n}\frac{1}{z} )(1-q^{0}\frac{1}{z})\frac{    \prod\limits_{0}^{+\infty }( 1-q^{n}z)}{1-z}=-z^{-1}S(z)
  \end{array}\]
 \end{proof}
 \[\begin{array}{l}
@@ -441,12 +441,12 @@ M(\frac{1}{z})=\frac{S(\frac{1}{za_{1}})...S(\frac{1}{za_{m}})}{S(\frac{1}{zb_{1
 g(qz)=\frac{f(qz)}{M(qz)}=\frac{f(z)}{\lambda M(z)}=\frac{1}{\lambda}g(z)
 \end{array}
 \end{equation}
-Нехай $\sum_{-\infty}^{+\infty}c_{n}z^{n}$-розвинення в ряд Лорана функції $g$ в $\mathbb{C}^{*}.\\$
+Нехай $\sum\limits_{-\infty}^{+\infty}c_{n}z^{n}$-розвинення в ряд Лорана функції $g$ в $\mathbb{C}^{*}.\\$
  \[\begin{array}{l}
-g(z)=\sum_{-\infty}^{+\infty}c_{n}z^{n},
+g(z)=\sum\limits_{-\infty}^{+\infty}c_{n}z^{n},
  \end{array}\]
  \[\begin{array}{l}
- g(qz)=\sum_{-\infty}^{+\infty}c_{n}q^{n}z^{n}=\frac{1}{\lambda}g(z)
+ g(qz)=\sum\limits_{-\infty}^{+\infty}c_{n}q^{n}z^{n}=\frac{1}{\lambda}g(z)
   \end{array}\]
 З огляду на $\eqref {th41} $ і того, що хоча б один з $c_{n}$ ($\exists k: c_{k}\neq 0$) відмінний від нуля, ми бачимо, що 
  \[\begin{array}{l}
@@ -508,16 +508,16 @@ S(\frac{zq^{n}}{b_{1}})= -\frac{b_{1}}{z}S(\frac{zq^{n-1}}{b_{1}})=(-1)^{n}\frac
 \begin{ozn}
   Позначимо
   \[\begin{array}{l}
-   \rho(z)=\sum^{+\infty}_{-\infty}  \frac{q^{n}z}{(1-q^{n}z)^2}
+   \rho(z)=\sum\limits^{+\infty}_{-\infty}  \frac{q^{n}z}{(1-q^{n}z)^2}
   \end{array}\]
 \end{ozn}
 Перевіримо, що $\rho(z)$ локсодромна функція:\\
 \[\begin{array}{l}
- \rho(qz)=\sum^{+\infty}_{-\infty}  \frac{q^{n+1}z}{(1-q^{n+1}z)^2}=
+ \rho(qz)=\sum\limits^{+\infty}_{-\infty}  \frac{q^{n+1}z}{(1-q^{n+1}z)^2}=
 \end{array}\]
 зробивши заміну $n+1=m$, отримаємо
 \[\begin{array}{l}
-=\sum^{+\infty}_{-\infty}  \frac{q^{m}z}{(1-q^{m}z)^2}=\rho(z)
+=\sum\limits^{+\infty}_{-\infty}  \frac{q^{m}z}{(1-q^{m}z)^2}=\rho(z)
 \end{array}\]
 \end{pryk}
 \[\begin{array}{l}
