@@ -143,8 +143,7 @@ $\frac{\partial u}{\partial x},\,\frac{\partial u}{\partial y},\,\frac{\partial 
 
 \newtheorem{thm}{Теорема}
 \newtheorem*{thmNoNum}{Теорема}
-\begin{thmNoNum}
-??????Зважаючи на теорему: голоморфна на компакті функція обмежена за модулем( бо неперервна за теоремою Вейєрштрасса)
+\begin{thmNoNum} голоморфна на компакті функція обмежена за модулем( бо неперервна за теоремою Вейєрштрасса)
 \end{thmNoNum}
 \vspace{1,5cm}
 
@@ -199,12 +198,7 @@ $f+g=h, \forall z \in \mathbb{C}^{*} h(z)=f(z)+g(z)\\
 f*g=h, \forall z \in \mathbb{C}^{*} h(z)=f(z)*g(z)$\\
 Нульвим елементом є $f(z)=0$ в $\mathbb{C}$.\\
 Одиничним елементом є $f(z)=1$ в $\mathbb{C}$.\\
-Тоді всі аксіоми поля будуть виконуватися:\\
-1. Існування нульового елемента: $g(z)=0, f(qz)$-мероморфна, $f(qz)+g(z)=f(qz)$.\\
-2. Додавання мероморфних функцій:$f_{1}(qz),f_{2}(qz)$-мероморфні і локсодромні, сума мероморфних- мероморфна, тому $f_{1}(qz)+f_{2}(qz)$-локсодромна \\
-3. Частка. Потрібно показати наступне $f_{1}(qz)/f_{2}(qz)=F(qz)$\\
-$f_{1}(qz)$, $f_{2}(qz)$ - мероморфні, частка двох мероморфних - мероморфна.Тому, оскільки $f_{1}(qz)$, $f_{2}(qz)$ -локсодромні, то $ F(qz)$ також локсодромна.\\
-\emph{Зауважимо:} $f(z)$-локсодромна, $c \neq 0$. Тоді  $f(cqz)=f(q*cz)=f(cz)$
+
 \vspace{1,5cm}
 
 \newtheorem{zauv}{Зауваження}
@@ -217,10 +211,7 @@ g(z)=f(e^{\frac{2iz\pi}{\omega_{1}}})
 \end{equation}
 є періодичною з періодом $\omega_{1}$.
 \end{zauv}
-Переконаємось, що це зауваження вірне: 
-\[\begin{array}{l}
-g(  z+\omega_{1}  ) = f(  e^{\frac{2i\pi (z+\omega_{1})}{\omega_{1}} }  ) =  f(  e^{\frac{2iz\pi }{ \omega_{1}}  +2i\pi } ) = f(  e^{\frac {2iz\pi}{\omega_{1}}} ) = g(z) 
-\end{array}\]
+
 \vspace{1cm}
 
 
@@ -231,21 +222,7 @@ g(z)=f(e^{\frac{2iz\pi}{\omega_{1}}})
 \end{array}\] 
 є подвійно періодичною, a\hspace{0,5cm} $q=e^{\frac{2i\pi \omega_{2}}{ \omega_{1}}}$,\hspace{0,5cm} $q<1$, \hspace{0,5cm}  $Im(\omega_{2}/\omega_{1})>0$, тобто $g(z)$ еліптична функція.
 \end{twerd}
-\begin{proof}?????
-\[\begin{array}{l}
-\Lambda = \mathbb{Z}\omega_{1} + \mathbb{Z}\omega_{2} 
-\end{array}\]
 
-\[\begin{array}{l}
-g(z+m\omega_{1}+ n\omega_{2})= f(e^{2i\pi(z+m\omega_{1}+ n\omega_{2})/\omega_{1}})=\\
-=f( e^{2iz\pi}e^{2im\pi}e^{2in\pi\omega_{2} / \omega_{1}})=
-f(e^{2iz\pi/\omega_{1}}q^{n})=
-\end{array}\]
- оскільки $q$-мультиплікатор, то
- \[\begin{array}{l}
- =f(e^{2iz\pi/\omega_{1}})=g(z)
- \end{array}\]
-\end{proof}
 \vspace{1cm}
 
 \begin{thm}
@@ -253,48 +230,6 @@ f(e^{2iz\pi/\omega_{1}}q^{n})=
 \end{thm}
 
 \includegraphics[scale=0.9]{th1.png}
-\begin{proof}
-Оскільки функція $f$ локсодромна, тому вона визначається своїми значеннями в замкненому кільці $\overline{C_{q}(1)}=\lbrace z\in \mathbb{C}: \vert q\vert\leq\vert z\vert\leq 1\rbrace$ \label{C_{q}(1)} тому, що 
-\begin{equation}\label{Cond1}
-\begin{array}{l}
- \forall z $ $\exists n: q^{n}z \in \overline{C_{q}(1)} 
-\end{array}
-\end{equation} 
-Зауважимо, умова $\eqref{Cond1}$ рівносильна такій: $f(zq^{n})=f(z)$\\
-Тобто ми отримали
-\begin{equation}\label{Cond2}
-\begin{array}{l}
-\vert q \vert \leq \vert q\vert ^{n} \vert z\vert \leq 1                       
-\end{array}
-\end{equation}
-$\overline{C_{q}(1)}$-обмежена і замкнена.\\
-Щоб довести, що умова  $\eqref{Cond1}$ справді виконується, нам достатньо знайти $n$. З нерівності $\eqref{Cond2}$ отримаємо:
-\[\begin{array}{l}
-log\vert q \vert \leq n log\vert q\vert +log \vert z\vert \leq 0                       
-\end{array}\]
-
-\[\begin{array}{l}
-\frac {log\vert q \vert }{log\vert q\vert} \geq n  + \frac{ log \vert z\vert}{log\vert q\vert} \geq 0                       
-\end{array}\]
-
-\[\begin{array}{l}
-1- \frac{ log \vert z\vert}{log\vert q\vert} \geq n  \geq -\frac{ log \vert z\vert}{log\vert q\vert} 
-\end{array}\]
-Оскільки $\overline{C_{q}(1)}$-компакт, то функція $f$ компактна на $\overline{C_{q}(1)}$. Зважаючи на теорему:???? голоморфна на компакті функція обмежена за модулем( бо неперервна за теоремою Вейєрштрасса), отримуємо
-\[\begin{array}{l}
-  \vert f(z) \vert\leq M
-\end{array}\]
-Тобто наша функція $f$ компактна в $\mathbb{C}^{*}$. \\
-А оскільки функція $f$ компактна в проколеній площині $\mathbb{C}^{*}$, то вона обмежена в околі нуля. Отже, $0$- усувна точка і по неперервності функція $f$ продовжується
-\[\begin{array}{l}
-  f(0)=\lim\limits_{z\rightarrow 0} f(z)
-\end{array}\]
-Тому 
-\[\begin{array}{l}
-  \vert f(z) \vert\leq M \Longrightarrow \vert f(0) \vert\leq M
-\end{array}\]
-Отож, функція $f$ ціла і обмежена в комплексній площині $\mathbb{C}$. Згідно з теоремою Ліувілля, ціла функція, модуль якої обмежений, є сталою.
-\end{proof}
 \vspace{1,5cm}
 
  
@@ -307,75 +242,14 @@ C_{q}(R)=\lbrace z\in \mathbb{C}:\left |q  \right |R\leq \left |z  \right |<R \r
 \end{equation} \label{C_{q}(R)}
  Тоді сума лишків $\frac{f(z)}{z}$ дорівнює $0$.
 \end{thm}
-\begin{proof}
- Межа кільця $C_{q}(R)$ має вигляд $\lbrace z\in \mathbb{C}:\left |q  \right |R< \left |z  \right |<R \rbrace$, адже межею є відкрита множина, але задля спрощення записів, розглядатимемо суму лишків на $\lbrace z\in \mathbb{C}:\left |q  \right |R\leq \left |z  \right |<R \rbrace$, маючи на увазі його межу. Згідно з теоремою Коші про лишки
- \[\begin{array}{l}
-\sum \limits_{ b_{j}\in C_{q}(R)} resf(z)= \frac{1}{2i\pi}\int \limits_{\partial C_{q}(R)} \frac{f(z)}{z}dz
-\end{array} \]
-Нехай $\Gamma$, $\Gamma^{'}$ позначають кола, які обмежують кільце $C_{q}(R)$.\\
-\includegraphics[scale=0.5]{1..PNG}\\
-Тоді 
-\[\begin{array}{l}
-\sum_{b_{j} \in C_{q}(R)}^{ } resf(z) = 
-\end{array} \]
-Оскільки правильним напрямком обходу області інтегрування називається такий
-напрямок, коли область інтегрування залишається ліворуч, тому
-\[\begin{array}{l}
-=\frac{1}{2\pi}(\int\limits_{\Gamma^{'}_{+}} \frac{f(\xi)}{\xi}d\xi + \int\limits_{\Gamma_{-}}\frac{f(x)}{x})dx)=
-\end{array} \]
-А оскільки інтеграл по правильному напрямку обходу області інтегрування рівний зі знаком "мінус" інтегралу по протилежному напрямку обходу області інтегрування, тобто $\int\limits_{\Gamma_{-}}= - \int\limits_{\Gamma_{+}}$, тому 
-\[\begin{array}{l}
-=\frac{1}{2\pi}(\int\limits_{\Gamma^{'}_{+}} \frac{f(\xi)}{\xi}d\xi - \int\limits_{\Gamma_{+}}\frac{f(x)}{x})dx)=
-\end{array} \]
- Записавши межі інтегрування в параметричному вигляді, отримаємо 
- \[\begin{array}{l}
- = \frac{1}{2i\pi}(\int\limits_{0}^{2\pi }f(Re^{i\theta})\frac{iRe^{i\theta}}{Re^{i\theta }}d\theta  + \int\limits_{0}^{2\pi }f(\left |q \right |Re^{i\theta })\frac{i\left |q \right |Re^{i\theta }}{\left |q \right |Re^{i\theta }}d\theta)=
-\end{array} \] 
-\[\begin{array}{l}
-= \frac{1}{2\pi}(\int\limits_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int\limits_{0}^{2\pi}f(\left |q \right |Re^{i\theta })d\theta) = 
-\end{array} \]
-Зробимо наступні заміни змінних:
-\begin{equation}\label{th22}
-\begin{array}{l}
-\theta =\varphi +\alpha 
-\end{array} 
-\end{equation}
-\[\begin{array}{l}
-q=\left |q  \right |e^{i\alpha }
-\end{array} \]
-і отримаємо
-\[\begin{array}{l}
-= \frac{1}{2\pi}(\int\limits_{0}^{2\pi} f(Re^{i\theta})d\theta  - \int\limits_{-\alpha}^{2\pi-\alpha}f(qRe^{i\varphi })d\varphi)=
-\end{array} \]
-А змінивши межі інтегрування другого інтеграла\\
- $$2\pi-\alpha\longrightarrow 2\pi ,$$ 
- $$ -\alpha\longrightarrow 0 ,$$
-  $$f(Re^{i\varphi}) \longrightarrow f(Re^{i\theta}) ,$$ згідно з заміною $\eqref {th22} $, одержимо
-\[\begin{array}{l}
-=\frac{1}{2\pi}(\int\limits_{0}^{2\pi} f(Re^{i\theta})d\theta - \int\limits_{0}^{2\pi}f(Re^{i\theta })d\theta)=0,
-\end{array}\]
-що і потрібно було довести.
-\end{proof}
+
 \vspace{1,5cm}
 
 \newtheorem{nasl}{Наслідок}
 \begin{nasl}
  Кожна не стала локсодромна функція з мультиплікатором $q$ має щонайменше 2 полюси( і 2 нулі ) в кожному кільці $C_{q}(R)$.
 \end{nasl}
-\begin{proof}
-Те, що функція має щонайменше 2 полюси означає, що полюсів може бути два і більше. Доводимо від супротивного- полюсів $0$ або $1$. $ f \neq const $\\
-Якщо нема жодного полюса, то функція $f$ голоморфна і стала за теоремою 1, що суперечить припущенню нашого наслідку. \\
-Припустимо, що наша локсодромна функція має один полюс.Тоді за теоремою Коші про лишки
 
-\begin{equation}\label{nasl1}
-\begin{array}{l}
-\frac{1}{2i\pi}\int\limits_{\partial C_{q}(R)}^{ } \frac{f(z)}{z}dz= resf(z)\big\vert_{z=b} \neq 0 
-\end{array} 
-\end{equation}
-бо $0$ тоді і лише тоді, коли функція $f$ голоморфна. Рівність
-$\eqref {nasl1} $ суперечить твердженню теореми 2. \\
-Тобто, справді кожна не стала локсодромна функція має щонайменше 2 полюси в будь-якому кільці $C_{q}(R)$.
-\end{proof}
 \vspace{1,5cm}
 
 \begin{thm}
@@ -384,29 +258,7 @@ $\eqref {nasl1} $ суперечить твердженню теореми 2. \\
 $\sum m_{a}=\sum n_{b}$
 \end{center}
 \end{thm}
-\begin{proof}
-Нагадаємо, що запис принципу аргумента виглядає так:
-\begin{equation}\label{arg}
-\begin{array}{l}                    
-N-P=\frac{1}{2\pi} \Delta_{\partial G} Arg f(z) =i\sum\limits_{z_k\in G} res \frac{f^{'}(z)}{f(z)} = \frac{1}{2i\pi}\int\limits_{\partial G}^{ }\frac{f^{'}(z)}{f(z)} dz , 
-\end{array}
-\end{equation}
-де $N$ - кількість нулів, а $P$ - кількість полюсів функції $f$ з урахуванням їх порядків.
-Застосуємо цей принцип до різниці суми нулів і суми полюсів в нашому випадку $\eqref {arg} $
-\[\begin{array}{l}
-\sum m_{a}-\sum n_{b} = \frac{1}{2i\pi}(\int\limits_{\Gamma^{'}_{+}}^{ } \frac{f^{'}(\xi )}{f(\xi) }d\xi-\int\limits_{\Gamma_{+}}^{ } \frac{f^{'}(z)}{f(z)}dz)=
-\end{array}\]
-запишемо межі інтегрування в параметричному вигляді
-\[\begin{array}{l}
-= \frac{1}{2i\pi}(\int\limits_{0}^{2\pi }iqRe^{i\varphi}\frac{f^{'}(qRe^{\varphi})}{f(qRe^{i\varphi })}d\varphi -
-    \int\limits_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=
-\end{array}\]
-\[\begin{array}{l}
-= \frac{1}{2i\pi}(\int\limits_{0}^{2\pi }\frac{1}{q}iqRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi -
-    \int\limits_{0}^{2\pi }iRe^{i\varphi}\frac{f^{'}(Re^{\varphi})}{f(Re^{i\varphi })}d\varphi)=0.
-\end{array}\]
-Отже, ми довели, що сума нулів функції рівна сумі її полюсів.
-\end{proof}
+
 \vspace{1,5cm}
 
 \begin{twerd} Для $z \in \mathbb{Z}^{*}=\mathbb{Z}\setminus \lbrace 0 \rbrace$\label{{Z}^{*}} покладемо
@@ -464,21 +316,7 @@ S(qz)= \prod\limits_{0}^{+\infty } ( 1-q^{n+1}z ) \prod\limits_{1}^{+\infty }( 1
 \end{equation}  
  
 тобто у випадку виконання умови  $\eqref{w1}$, ми бачимо, що $M\in L_{q}$.\\
-Перевіримо $\eqref{q2}$:\\  
- \[\begin{array}{l}
- M(qz)=\frac{S(\frac{qz}{a_{1}})...S(\frac{qz}{a_{m}})}{S(\frac{qz}{b_{1}})...S(\frac{qz}{b_{m}})}=
- \end{array}\]
- застосуємо рівність $\eqref{s1}$
-\[\begin{array}{l}
-=\frac{ (-1)^{m} \frac{a_{1}}{z} S(\frac{z}{a_{1}})...\frac{a_{m}}{z} S(\frac{z}{a_{m}}) }{ (-1)^{m} \frac{b_{1}}{z} S(\frac{z}{b_{1}})...\frac{b_{m}}{z} S(\frac{z}{b_{m}}) }
 
-=\frac{ a_{1}*...*a_{m}}{b_{1}*...*b_{m}}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})}=
-\end{array}\]
-\[\begin{array}{l}
-=\frac{ a_{1}*...*a_{m}}{b_{1}*...*b_{m}}M(z) 
-\end{array}\]
-зважаючи на $\eqref{w1}$, отримаємо
-$M(qz)=M(z)$\\
 
 Аналогічно застосувавши $\eqref{s2}$ і $\eqref{w1}$, отримаємо\\
 \[\begin{array}{l}
@@ -494,54 +332,7 @@ M(\frac{1}{z})=\frac{S(\frac{1}{za_{1}})...S(\frac{1}{za_{m}})}{S(\frac{1}{zb_{1
 \begin{thm}
 Для кожного $R$, такого що, межа $C_{q}(R)$, яка не містить ні нулів, ні полюсів відмінної від сталої локсодромної функції $f$, нехай $\lambda=\frac{(a_{1}...a_{m})}{(b_{1}...b_{m})}$ , де $a_{1},...,a_{m}$- нулі функції $f$, $b_{1},...,b_{m}$- її полюси. Тоді $\lambda$ належить циклічній групі $\left \langle q \right \rangle$, тобто $ \exists n:\lambda =q^{n}$.
 \end{thm}
-\begin{proof}
-Першу рівність з $\eqref{q2}$ перепишемо:
-\[\begin{array}{l}
- M(qz)=\lambda M(z).
- \end{array}\]
- Розглянемо функцію:
- \[\begin{array}{l}
- g(z)=\frac{f(z)}{M(z)}.
-  \end{array}\]
-  Згідно побудови функції $M$,бачимо, що функція $g$ не має ні нулів, ні полюсів в $C_{q}(R)$, бо $M$ має ті ж нулі і полюси, що й функція $f$. Звідси слідує, що $g$ ціла??????\\
-   ???????\\
-   так само, як $\frac{1}{g}$.
-\begin{equation}\label{th41}
-\begin{array}{l}
-g(qz)=\frac{f(qz)}{M(qz)}=\frac{f(z)}{\lambda M(z)}=\frac{1}{\lambda}g(z)
-\end{array}
-\end{equation}
-Нехай $\sum\limits_{-\infty}^{+\infty}c_{n}z^{n}$-розвинення в ряд Лорана функції $g$ в $\mathbb{C}^{*}.\\$
- \[\begin{array}{l}
-g(z)=\sum\limits_{-\infty}^{+\infty}c_{n}z^{n},
- \end{array}\]
- \[\begin{array}{l}
- g(qz)=\frac{1}{\lambda}g(z)
- \end{array}\]
- \[\begin{array}{l}
- \sum\limits_{-\infty}^{+\infty}c_{n}q^{n}z^{n}=\frac{1}{\lambda}\sum\limits_{-\infty}^{+\infty}c_{n}z^{n}
-  \end{array}\]
- \[\begin{array}{l} 
-c_{n}q^{n}=\frac{1}{\lambda}c_{n} 
-  \end{array}\] 
-   \[\begin{array}{l}
- (\lambda q^{n}-1)c_{n}=0,
-  \end{array}\]
-Хоча б один з коефіцієнтів $c_{n}$ відмінний від нуля, бо якщо б всі $c_{n}=0$, то $g(z)=c_{0}$ і вона була б стала, що суперечило б умові.Отже 
-$$\exists k: c_{k}\neq 0$$ 
-і 
- \[\begin{array}{l} 
- \lambda= q^{-n}\in \left \langle q \right \rangle .
- \end{array}\]
-Розвинення в ряд Лорана єдине, тому коефіцієнти при відповідних степенях рівні.
-\[\begin{array}{l}
-c_{k}q^{k}=\frac{1}{\lambda} c_{k}$ $\Rightarrow$ $(q^{k}\lambda -1)c_{k}=0,
- \end{array}\]
-\[\begin{array}{l}
-c_{k}\neq 0$ $\Rightarrow$  $\lambda=q^{-k}.
- \end{array}\]
-??????Для $g(z)$ лише одне $ c_{k}\neq 0$. ????
-\end{proof}
+
 \vspace{1,5cm}
 
 \begin{thm}
@@ -552,26 +343,7 @@ c_{k}\neq 0$ $\Rightarrow$  $\lambda=q^{-k}.
 \end{array}
 \end{equation}
  \end{thm}
-\begin{proof}
-\[\begin{array}{l}
-g(z)=\frac{f(z)}{M(z)}\Rightarrow f(z)=M(z)g(z)= M(z)z^{n}c_{n}
- \end{array}\]
- позначивши $c_{n}=C$, отримаємо 
-\[\begin{array}{l} 
-f(z) =Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})} 
-\end{array}\]
-\[\begin{array}{l}
-f(z)=C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{zq^{n}}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}= 
- \end{array}\]
-оскільки
-\[\begin{array}{l}
-S(\frac{zq^{n}}{b_{1}})= -\frac{b_{1}}{z}S(\frac{zq^{n-1}}{b_{1}})=(-1)^{n}\frac{b_{1}^{n}}{z^{n}}S(\frac{z}{b_{1}}).
- \end{array}\]
-тому
-\[\begin{array}{l}
- =C\tfrac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{(-1)^{n}\frac{b_{1}^{n}}{z^{n}} S(\frac{z}{b_{1}})S(\frac{z}{b_{2}})...S(\frac{z}{b_{m}})}=Cz^{n}\frac{S(\frac{z}{a_{1}})...S(\frac{z}{a_{m}})}{S(\frac{z}{b_{1}})...S(\frac{z}{b_{m}})} 
-  \end{array}\]
-Ми отримали $\eqref{th51}$. При чому константа $C$ дорівнює $(-1)^{n}b_{1}^{-n}$.
+\eqref{th51}$. При чому константа $C$ дорівнює $(-1)^{n}b_{1}^{-n}$.
 \end{proof}
 
 
@@ -588,23 +360,7 @@ g(z)=f(e^{\frac{2\pi i \omega_{2} }{\omega_{1}}})
 \[\begin{array}{l}
 q=e^{\frac{2\pi i \omega_{2} }{\omega_{1}}}
 \end{array}\]
-\textbf{Розв'язок:} Нехай $\alpha_{k} $-послідовність всіх нулів функції $f(z)$, а $a_{k}$-послідовність всіх нулів функції $g(z)$, тоді
-\begin{equation}\label{pr2}
-\begin{array}{l}
-\alpha_{k}=e^{\frac{2\pi i \omega_{2} }{\omega_{1}}}
-\end{array}
-\end{equation}
-Прологарифнуємо $\eqref{pr2}$, враховуючи, що логарифм-функція багатозначна, отримаємо
-\begin{equation}\label{pr22}
-\begin{array}{l}
-log(\alpha_{k})=log(e^{\frac{2\pi i \omega_{2} }{\omega_{1}}})= \frac{2\pi i \omega_{2} }{\omega_{1}}+ 2\pi m_{1} 
-\end{array}
-\end{equation}
-Виразивши з $\eqref{pr22}$ 
-\[\begin{array}{l}
-a_{k}=\frac{w_{1}}{2\pi i}log\alpha_{k} + m_{1}i\omega_{1}=\frac{w_{1}}{2\pi i}(log\vert\alpha_{k}\vert + iarg\alpha_{k})+m_{1}i\omega_{1}
-\end{array}\]
-$a_{k}$-нулі функції $g(z)$.
+
 \end{pryk}
 \vspace{1,5cm}
 
